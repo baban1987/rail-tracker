@@ -55,7 +55,8 @@ const HomePage = () => {
         setError('');
         setSearchResult(null);
 
-        const url = `http://localhost:5000/api/${type}/${query}`;
+       const url = `/api/${type}/${query}`;
+
 
         try {
             const response = await axios.get(url);
